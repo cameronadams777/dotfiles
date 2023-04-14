@@ -4,7 +4,8 @@ local keymap = vim.keymap -- for conciseness
 
 -- general keymaps
 
-vim.keymap.set("n", "<leader>pv", ":NvimTreeToggle<cr>")
+vim.keymap.set("n", "<leader>pb", ":NvimTreeClose<cr>")
+vim.keymap.set("n", "<leader>pv", ":NvimTreeFocus<cr>")
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")

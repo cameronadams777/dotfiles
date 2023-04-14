@@ -114,6 +114,7 @@ eval "$(rbenv init -)"
 
 # Aliases
 alias vim="nvim"
+alias gpf="git push origin head --force-with-lease"
 alias gbr="git branch | grep -v "master" | xargs git branch -D"
 alias air="$(go env GOPATH)/bin/air"
 alias redis="redis-cli"
@@ -140,3 +141,8 @@ export EDITOR='nvim'
 export PNPM_HOME="/Users/cameron/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+eval "$(starship init zsh)"
+export PATH="$HOME/.phpenv/bin:$PATH"
+eval "$(phpenv init -)"
