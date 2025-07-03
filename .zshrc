@@ -93,8 +93,6 @@ alias rest="timer 10m && terminal-notifier -message 'Pomodoro'\
 
 alias python="python3"
 alias pip="pip3"
-alias porter-prod='porter --cluster 2652'
-alias porter-stage='porter --cluster 2587'
 
 # Created by `pipx` on 2024-07-11 13:51:21
 export PATH="$PATH:/Users/cameron/.local/bin"
