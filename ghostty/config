@@ -1,0 +1,8 @@
+custom-shader = shaders/cursor-smear.glsl
+
+theme = "ayu"
+
+font-family = "Operator Mono"
+font-size = 20
+
+background-opacity = 0.9
