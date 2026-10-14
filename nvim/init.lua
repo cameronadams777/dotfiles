@@ -1,13 +1,2 @@
-require("cameron")
-
-require("nvim-tree").setup({
-  sort = {
-    sorter = "case_sensitive",
-  },
-  view = {
-    width = 30,
-  },
-  renderer = {
-    group_empty = true,
-  },
-})
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
