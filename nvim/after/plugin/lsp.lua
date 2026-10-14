@@ -17,11 +17,16 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
   ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
   ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
   ['<C-y>'] = cmp.mapping.confirm({ select = true }),
-  ["<C-Space>"] = cmp.mapping.complete(),
+  ["<C-e>"] = cmp.mapping.complete(),
+  ['<CR>'] = cmp.mapping.confirm({ select = true }),
+  ['<Esc>'] = cmp.mapping(function(fallback)
+    if cmp.visible() then cmp.abort() else fallback() end
+  end),
 })
 
 cmp_mappings['<Tab>'] = nil
 cmp_mappings['<S-Tab>'] = nil
+cmp_mappings['<C-Space>'] = nil
 
 lsp.setup_nvim_cmp({
   mapping = cmp_mappings
